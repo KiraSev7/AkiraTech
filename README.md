@@ -26,7 +26,7 @@ Contributions and suggestions for improvements are always welcome. Please open a
 
 ## Contact
 
-If you have any questions or further feedback, feel free to reach out to me via email at [kiratv1710@gmail.com](mailto:kiratv1710@gmail.com) ![Email Icon](https://img.icons8.com/color/24/000000/gmail.png) or WhatsApp at [+6283847820834](https://wa.me/6283847820834) ![WhatsApp Icon](https://img.icons8.com/color/24/000000/whatsapp.png).
+If you have any questions or further feedback, feel free to reach out to me via email at (mailto:kiratv1710@gmail.com) ![Email Icon](https://img.icons8.com/color/24/000000/gmail.png) or WhatsApp at (https://wa.me/6283847820834) ![WhatsApp Icon](https://img.icons8.com/color/24/000000/whatsapp.png).
 
 **Note: Still in development stage.**
 
