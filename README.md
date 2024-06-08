@@ -28,13 +28,6 @@ Contributions and suggestions for improvements are always welcome. Please open a
 
 If you have any questions or further feedback, feel free to reach out to me via email at [kiratv1710@gmail.com](mailto:kiratv1710@gmail.com) ![Email Icon](https://img.icons8.com/color/24/000000/gmail.png) or WhatsApp at [+6283847820834](https://wa.me/6283847820834) ![WhatsApp Icon](https://img.icons8.com/color/24/000000/whatsapp.png).
 
-## Icons
-
-- ![Star Icon](https://img.icons8.com/ios-filled/50/000000/star.png)
-- ![Code Icon](https://img.icons8.com/material-outlined/24/000000/code.png)
-- ![Rocket Icon](https://img.icons8.com/ios-glyphs/24/000000/rocket.png)
-- ![Brain Icon](https://img.icons8.com/material-rounded/24/000000/brain.png)
-
 **Note: Still in development stage.**
 
 Thank you for using AkiraTech!
