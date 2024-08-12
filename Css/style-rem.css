@@ -8,8 +8,8 @@
 
 #wa {
   display: flex;
-  justify-content: center; /* Mengatur teks secara horizontal di tengah */
-  align-items: center; /* Mengatur teks secara vertikal di tengah */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
   text-decoration: none;
   color: white;
   position: fixed;
@@ -19,26 +19,19 @@
 
 #wa img {
   margin-right: 10px;
+  width: 50px;
 }
 
-#rem {
-  position: fixed;
-  width: 260px;
-  right: 0px;
-  bottom: 0px;
+@media (max-width: 480px) {
+   #rem {
+    width: 150px;
+   }
+
+   #wa {
+    left: 10px;
+   }
+   #wa img {
+    width: 30px;
 }
 
-#wa {
-  display: flex;
-  justify-content: center; /* Mengatur teks secara horizontal di tengah */
-  align-items: center; /* Mengatur teks secara vertikal di tengah */
-  text-decoration: none;
-  color: white;
-  position: fixed;
-  bottom: 40px;
-  left: 120px;
-}
-
-#wa img {
-  margin-right: 10px;
 }
