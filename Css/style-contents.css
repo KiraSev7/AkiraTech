@@ -95,3 +95,49 @@
   margin: 0;
   padding: 0;
 }
+
+/* Untuk layar dengan lebar maksimum 768px (tablet dan ponsel) */
+@media (max-width: 768px) {
+
+}
+
+/* Untuk layar dengan lebar maksimum 480px (ponsel) */
+@media (max-width: 480px) {
+.main-content-container {
+  width: auto;
+  margin-left: 0px;
+  
+}
+.content1{
+  align-items: flex-end;
+}
+
+.content1 p{
+  font-size: 17px;
+}
+
+.content1 h1{
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.content2{
+  flex-direction: column;
+}
+
+.bx{
+  width: auto;
+}
+
+#Key2{
+  font-size: 16px;
+  top: 10px;
+}
+
+#Key1{
+  position: relative;
+  font-size: 16px;
+}
+ 
+}
+
