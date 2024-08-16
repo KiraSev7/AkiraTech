@@ -24,7 +24,7 @@
 
 @media (max-width: 480px) {
    #rem {
-    width: 150px;
+    z-index: -1;
    }
 
    #wa {
