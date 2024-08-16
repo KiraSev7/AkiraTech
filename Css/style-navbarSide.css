@@ -3,26 +3,42 @@ body {
 }
 
 .offcanvas-body {
-  margin: 0px;
-  padding: 0px;
-  padding-left: 10px;
+  margin: 0;
+  padding: 0 0 0 10px;
 }
+
+#col-logo {
+  width: 100%;
+  padding-top: 20px;
+}
+
+#col-user {
+  border-top: 1px solid #a5bbe6;
+  width: 100%;
+  padding: 10px 0;
+}
+ #col-user a img{
+    border-radius: 5px; 
+    width: 70px;
+  }
 
 .offcanvas.offcanvas-start {
   width: 79px;
 }
+
 .btn {
   position: relative;
 }
+
 .navbar-expand-lg {
   z-index: 2;
 }
+
 .navbar-side {
   z-index: 3;
 }
 
 .row {
-  /* background-color: #212529;  */
   background-color: #0f51d2;
   width: 80px;
   height: 100%;
@@ -35,8 +51,6 @@ body {
 
 .navbar {
   height: 70px;
-  /* background-color: #A5BBE6; */
-  /* background-color: #F1F4FA; */
   background-color: #a5bbe6;
   flex-wrap: nowrap;
 }
@@ -61,8 +75,67 @@ body {
   border: 1px solid green;
 }
 
+
+  #carouselExample {
+  display: none;
+}
+
 @media only screen and (max-width: 991px) {
+
   .navbar-side {
     display: none;
   }
+
+  #carouselExample {
+  display: block;
+  width: 100%;
 }
+
+  #content2-d{
+    display: none;
+  }
+
+  .offcanvas.offcanvas-start {
+    width: 100%;
+    height: 60px;
+  }
+
+  .row {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    flex-wrap: nowrap;
+    position: relative;
+    flex-direction: row-reverse;
+  }
+  .row>*{
+    padding: 0px;
+  }
+
+  .offcanvas-body {
+    overflow: hidden;
+    padding-left: 0;
+  }
+
+
+  #col-logo {
+    padding-top: 3px;
+  }
+
+  #col-user {
+    padding: 2px;
+  }
+
+  #col-user a img {
+    width: 56px;
+  }
+ 
+  .offcanvas.offcanvas-start {
+    top: auto;
+}
+.col a img {
+    width: 55px;
+
+}
+}
+
