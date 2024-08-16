@@ -62,10 +62,8 @@
             <div class="offcanvas-body">
               <!-- Offcanvas content -->
               <div class="navbar-side2 text-center row">
-                <div
-                  class="col align-self-start"
-                  style="width: 100%; padding: 0px; padding-top: 20px"
-                >
+                <div id="col-logo" 
+                  class="col align-self-start">
                   <a href="#"
                     ><img src="Nav-img/logo.png" alt="AkiraWeb-Logo"
                   /></a>
@@ -135,19 +133,10 @@
                     ><img src="Nav-img/dove-.gif" alt="Messages"
                   /></a>
                 </div>
-                <div
-                  class="col align-self-end"
-                  style="
-                    border-top: 1px solid #a5bbe6;
-                    width: 100%;
-                    padding: 10px 0 10px;
-                  "
-                >
+                <div id="col-user" 
+                  class="col align-self-end">
                   <a href="#"
-                    ><img
-                      src="Nav-img/Users.png"
-                      style="border-radius: 5px; width: 70px"
-                      alt="Profile"
+                    ><img src="Nav-img/Users.png" alt="Profile"
                   /></a>
                 </div>
               </div>
@@ -187,10 +176,8 @@
 
       <!-- Bagian Side dari Navbar -->
       <div class="navbar-side text-center row">
-        <div
-          class="col align-self-start"
-          style="width: 100%; padding: 0px; padding-top: 20px"
-        >
+        <div id="col-logo" 
+          class="col align-self-start">
           <a href="#"><img src="Nav-img/logo.png" alt="AkiraWeb-Logo" /></a>
         </div>
         <div
@@ -252,14 +239,8 @@
             ><img src="Nav-img/dove-.gif" alt="Messages"
           /></a>
         </div>
-        <div
-          class="col align-self-end"
-          style="
-            border-top: 1px solid #a5bbe6;
-            width: 100%;
-            padding: 10px 0 10px;
-          "
-        >
+        <div id="col-user" 
+          class="col align-self-end">
           <a href="#"
             ><img
               src="Nav-img/Users.png"
@@ -283,12 +264,38 @@
           </p>
           
         </div>
-        <div class="cn content2">
-          <div class="bx box1"></div>
-          <div class="bx box2"></div>
-          <div class="bx box3"></div>
-          <div class="bx box4"></div>
-        </div>
+<div id="carouselExample" class="carousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="bx box1"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="bx box2"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="bx box3"></div>
+    </div>
+    <div class="carousel-item">
+      <div class="bx box4"></div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="content2-d" class="cn content2">
+  <div class="bx box1"></div>
+  <div class="bx box2"></div>
+  <div class="bx box3"></div>
+  <div class="bx box4"></div>
+</div>
+
         <div class="cn content3">
           <img
             src="Lessons-img/Kata Kerja2.png"
