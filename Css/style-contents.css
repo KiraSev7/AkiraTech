@@ -110,6 +110,7 @@
 }
 .content1{
   align-items: flex-end;
+  border-bottom: 1px solid white;
 }
 
 .content1 p{
@@ -123,6 +124,10 @@
 
 .content2{
   flex-direction: column;
+}
+
+#carouselExample{
+  border-bottom: 1px solid white;
 }
 
 .cn{
