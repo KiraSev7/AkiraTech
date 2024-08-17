@@ -24,6 +24,42 @@
       img {
         pointer-events: none;
       }
+
+          /* Styling for the notification container */
+    .notification {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+       /* Solid background color */
+      padding: 0;
+      z-index: 2;
+/*      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      text-align: center;
+    }
+
+    /* Styling for the text inside the notification */
+    .notification-text {
+      position: relative;
+      display: inline-block;
+      color: #fff; /* White text color */
+      font-size: 15px; /* Adjust font size */
+      font-weight: 500; /* Medium weight text */
+      letter-spacing: 0.5px; /* Slightly spaced letters for readability */
+      white-space: nowrap; /* Prevent text from wrapping */
+      animation: slideIn 18s linear infinite; /* Adjusted animation duration */
+    }
+
+    /* Keyframes for the slide-in animation */
+    @keyframes slideIn {
+      0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+      }
+      100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+      }
+    }
     </style>
 <!--     <script>
       // Deteksi perangkat mobile
@@ -173,7 +209,6 @@
           </div>
         </div>
       </nav>
-
       <!-- Bagian Side dari Navbar -->
       <div class="navbar-side text-center row">
         <div id="col-logo" 
@@ -378,6 +413,10 @@
           </div>
         </div>
       </div>
+              <!-- Notification container -->
+  <div class="notification">
+    <span class="notification-text">🚧 Sedang Dalam Pengembangan: Mohon Sabar, Halaman Ini Akan Segera Hadir! Versi PC Menawarkan Pengalaman Terbaik Saat Ini. 🚧</span>
+  </div>
     </div>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
