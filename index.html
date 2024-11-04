@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="Css/style-navbarSide.css" />
-    <link rel="stylesheet" href="Css/style-contents.css" />
-    <link rel="stylesheet" href="Css/style-cube.css" />
-    <link rel="stylesheet" href="Css/style-rem.css" />
-    <title>AkiraTech</title>
-    <style>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="Css/style-navbarSide.css"/>
+<link rel="stylesheet" href="Css/style-contents.css"/>
+<link rel="stylesheet" href="Css/style-cube.css"/>
+<link rel="stylesheet" href="Css/style-rem.css"/>
+<title>AkiraTech</title>
+<style>
       body {
         margin: 0px;
         padding: 0px;
@@ -20,11 +20,9 @@
         cursor: default;
         position: relative;
       }
-
       img {
         pointer-events: none;
       }
-
           /* Styling for the notification container */
     .notification {
       position: fixed;
@@ -38,7 +36,6 @@
 /*      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
       text-align: center;
     }
-
     /* Styling for the text inside the notification */
     .notification-text {
       position: relative;
@@ -50,7 +47,6 @@
       white-space: nowrap; /* Prevent text from wrapping */
       animation: slideIn 18s linear infinite; /* Adjusted animation duration */
     }
-
     /* Keyframes for the slide-in animation */
     @keyframes slideIn {
       0% {
@@ -60,8 +56,8 @@
         transform: translateX(-100%); /* End off-screen to the left */
       }
     }
-    </style>
-<!--     <script>
+</style>
+<script>
       // Deteksi perangkat mobile
       function isMobileDevice() {
         return (
@@ -69,355 +65,208 @@
           navigator.userAgent.indexOf("IEMobile") !== -1
         );
       }
-
       // Redirect jika perangkat adalah mobile
       if (isMobileDevice()) {
         window.location.href = "Halaman-Mobile/message.html";
       }
-    </script> -->
-  </head>
-  <body
-    onselectstart="return false;"
-    oncontextmenu="return false;"
-    onmousedown="return false;"
-  >
-    <div class="container-fluid" style="height: 100vh">
-      <!-- Bagian Top dari Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-          <div
-            class="offcanvas offcanvas-start text-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <!-- <div class="offcanvas-header">
+</script>
+</head>
+<body onselectstart="return false;" oncontextmenu="return false;" onmousedown="return false;">
+<div class="container-fluid" style="height: 100vh">
+  <!-- Bagian Top dari Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <div class="offcanvas offcanvas-start text-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <!-- <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div> -->
-            <div class="offcanvas-body">
-              <!-- Offcanvas content -->
-              <div class="navbar-side2 text-center row">
-                <div id="col-logo" 
-                  class="col align-self-start">
-                  <a href="#"
-                    ><img src="Nav-img/logo.png" alt="AkiraWeb-Logo"
-                  /></a>
-                </div>
-                <div
-                  class="col"
-                  style="
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <a href="index.html"
-                    ><img src="Nav-img/menu.gif" alt="Home"
-                  /></a>
-                </div>
-                <div
-                  class="col"
-                  style="
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <a href="Lessons/lessons.html"
-                    ><img src="Nav-img/book.gif" alt="Lessons"
-                  /></a>
-                </div>
-                <div
-                  class="col"
-                  style="
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <a href="#"
-                    ><img src="Nav-img/blackboard.gif" alt="Kanji"
-                  /></a>
-                </div>
-                <div
-                  class="col"
-                  style="
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <a href="#"
-                    ><img src="Nav-img/notes.gif" alt="Vocabulary"
-                  /></a>
-                </div>
-                <div
-                  class="col"
-                  style="
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                  "
-                >
-                  <a href="AyoChat/index.html"
-                    ><img src="Nav-img/dove-.gif" alt="Messages"
-                  /></a>
-                </div>
-                <div id="col-user" 
-                  class="col align-self-end">
-                  <a href="#"
-                    ><img src="Nav-img/Users.png" alt="Profile"
-                  /></a>
-                </div>
-              </div>
-            </div>
+      <div class="offcanvas-body">
+        <!-- Offcanvas content -->
+        <div class="navbar-side2 text-center row">
+          <div id="col-logo" class="col align-self-start">
+            <a href="#"><img src="Nav-img/logo.png" alt="AkiraWeb-Logo"/></a>
           </div>
-
-          <div class="ms-auto">
-            <!-- Right align content -->
-            <form class="d-flex align-items-end" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-primary" type="submit">
-                Search
-              </button>
-            </form>
+          <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+            <a href="index.html"><img src="Nav-img/menu.gif" alt="Home"/></a>
           </div>
-          <div>
-            <!-- Right align content -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+            <a href="Lessons/lessons.html"><img src="Nav-img/book.gif" alt="Lessons"/></a>
           </div>
-        </div>
-      </nav>
-      <!-- Bagian Side dari Navbar -->
-      <div class="navbar-side text-center row">
-        <div id="col-logo" 
-          class="col align-self-start">
-          <a href="#"><img src="Nav-img/logo.png" alt="AkiraWeb-Logo" /></a>
-        </div>
-        <div
-          class="col"
-          style="
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <a href="index.html"><img src="Nav-img/menu.gif" alt="Home" /></a>
-        </div>
-        <div
-          class="col"
-          style="
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <a href="Lessons/lessons.html"
-            ><img src="Nav-img/book.gif" alt="Lessons"
-          /></a>
-        </div>
-        <div
-          class="col"
-          style="
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <a href="#"><img src="Nav-img/blackboard.gif" alt="Kanji" /></a>
-        </div>
-        <div
-          class="col"
-          style="
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <a href="#"><img src="Nav-img/notes.gif" alt="Vocabulary" /></a>
-        </div>
-        <div
-          class="col"
-          style="
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <a href="AyoChat/index.html"
-            ><img src="Nav-img/dove-.gif" alt="Messages"
-          /></a>
-        </div>
-        <div id="col-user" 
-          class="col align-self-end">
-          <a href="#"
-            ><img
-              src="Nav-img/Users.png"
-              style="border-radius: 5px; width: 70px"
-              alt="Profile"
-          /></a>
+          <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+            <a href="#"><img src="Nav-img/blackboard.gif" alt="Kanji"/></a>
+          </div>
+          <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+            <a href="#"><img src="Nav-img/notes.gif" alt="Vocabulary"/></a>
+          </div>
+          <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+            <a href="AyoChat/index.html"><img src="Nav-img/dove-.gif" alt="Messages"/></a>
+          </div>
+          <div id="col-user" class="col align-self-end">
+            <a href="#"><img src="Nav-img/Users.png" alt="Profile"/></a>
+          </div>
         </div>
       </div>
-
-      <!-- Bagian Content -->
-      <div class="main-content-container">
-        <div class="cn content1">
-          <span id="Key2">きっかけが何だったかは覚えていない、ただ物心ついた頃にはもう憧れていた。</span>
-          <span id="Key1">俺は昔から何も変わらない。</span>
-          <h1>My experience</h1>
-          <p>
-            AkiraWeb is a website that I specifically created for my personal
-            needs, providing reviews and summaries of lessons I have previously
-            learned, granting me easy access to review and deepen my
-            understanding without relying on external sources.
-          </p>
-          
-        </div>
-<div id="carouselExample" class="carousel" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="bx box1"></div>
     </div>
-    <div class="carousel-item">
-      <div class="bx box2"></div>
+    <div class="ms-auto">
+      <!-- Right align content -->
+      <form class="d-flex align-items-end" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
     </div>
-    <div class="carousel-item">
-      <div class="bx box3"></div>
-    </div>
-    <div class="carousel-item">
-      <div class="bx box4"></div>
+    <div>
+      <!-- Right align content -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<div id="content2-d" class="cn content2">
-  <div class="bx box1"></div>
-  <div class="bx box2"></div>
-  <div class="bx box3"></div>
-  <div class="bx box4"></div>
-</div>
-
-        <div class="cn content3">
-          <img
-            src="Lessons-img/Kata Kerja2.png"
-            alt="Kata Kerja"
-            height="auto"
-            width="100%"
-          />
+  </nav>
+  <!-- Bagian Side dari Navbar -->
+  <div class="navbar-side text-center row">
+    <div id="col-logo" class="col align-self-start">
+      <a href="#"><img src="Nav-img/logo.png" alt="AkiraWeb-Logo"/></a>
+    </div>
+    <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+      <a href="index.html"><img src="Nav-img/menu.gif" alt="Home"/></a>
+    </div>
+    <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+      <a href="Lessons/lessons.html"><img src="Nav-img/book.gif" alt="Lessons"/></a>
+    </div>
+    <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+      <a href="#"><img src="Nav-img/blackboard.gif" alt="Kanji"/></a>
+    </div>
+    <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+      <a href="#"><img src="Nav-img/notes.gif" alt="Vocabulary"/></a>
+    </div>
+    <div class="col" style=" width: 100%; display: flex; justify-content: center; align-items: center; ">
+      <a href="AyoChat/index.html"><img src="Nav-img/dove-.gif" alt="Messages"/></a>
+    </div>
+    <div id="col-user" class="col align-self-end">
+      <a href="#"><img src="Nav-img/Users.png" style="border-radius: 5px; width: 70px" alt="Profile"/></a>
+    </div>
+  </div>
+  <!-- Bagian Content -->
+  <div class="main-content-container">
+    <div class="cn content1">
+      <span id="Key2">きっかけが何だったかは覚えていない、ただ物心ついた頃にはもう憧れていた。</span>
+      <span id="Key1">俺は昔から何も変わらない。</span>
+      <h1>My experience</h1>
+      <p>
+         AkiraWeb is a website that I specifically created for my personal needs, providing reviews and summaries of lessons I have previously learned, granting me easy access to review and deepen my understanding without relying on external sources.
+      </p>
+    </div>
+    <div id="carouselExample" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="bx box1"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="bx box2"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="bx box3"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="bx box4"></div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="content2-d" class="cn content2">
+      <div class="bx box1"></div>
+      <div class="bx box2"></div>
+      <div class="bx box3"></div>
+      <div class="bx box4"></div>
+    </div>
+    <div class="cn content3">
+      <img src="Lessons-img/Kata Kerja2.png" alt="Kata Kerja" height="auto" width="100%"/>
+    </div>
+  </div>
 
-      <!-- Bagian IMG Rem and Wa -->
-      <a id="wa" href="https://wa.me/6283847820834"
-        ><img src="S-img/whatsapp.png" alt="Whatsapp" />Chat On
-        Whatsapp</a
-      >
-      <img id="rem" src="S-img/Rem.png" alt="Rem" />
+  <!-- Bagian IMG Rem and Wa -->
+  <a id="wa" href="https://wa.me/6283847820834"><img src="S-img/whatsapp.png" alt="Whatsapp"/>Chat On Whatsapp</a>
+  <img id="rem" src="S-img/Rem.png" alt="Rem"/>
 
-      <!-- Bagian Cube -->
-      <div class="main-cubes">
-        <div class="canvas">
-          <div class="cube front">
-            <div class="col-cube">
-              <div class="number1"></div>
-              <div class="number3"></div>
-            </div>
-            <div class="col-cube">
-              <div class="number2"></div>
-              <div class="number4"></div>
-            </div>
-          </div>
-          <div class="cube back">
-            <div class="col-cube">
-              <div class="number1"></div>
-              <div class="number3"></div>
-            </div>
-            <div class="col-cube">
-              <div class="number2"></div>
-              <div class="number4"></div>
-            </div>
-          </div>
-          <div class="cube left">
-            <div class="col-cube">
-              <div class="number1"></div>
-              <div class="number3"></div>
-            </div>
-            <div class="col-cube">
-              <div class="number2"></div>
-              <div class="number4"></div>
-            </div>
-          </div>
-          <div class="cube right">
-            <div class="col-cube">
-              <div class="number1"></div>
-              <div class="number3"></div>
-            </div>
-            <div class="col-cube">
-              <div class="number2"></div>
-              <div class="number4"></div>
-            </div>
-          </div>
-          <div class="cube top">
-            <div class="col-cube">
-              <div class="number1"></div>
-              <div class="number3"></div>
-            </div>
-            <div class="col-cube">
-              <div class="number2"></div>
-              <div class="number4"></div>
-            </div>
-          </div>
-          <div class="cube bottom">
-            <div class="col-cube">
-              <div class="number1"></div>
-              <div class="number3"></div>
-            </div>
-            <div class="col-cube">
-              <div class="number2"></div>
-              <div class="number4"></div>
-            </div>
-          </div>
+  <!-- Bagian Cube -->
+  <div class="main-cubes">
+    <div class="canvas">
+      <div class="cube front">
+        <div class="col-cube">
+          <div class="number1"></div>
+          <div class="number3"></div>
+        </div>
+        <div class="col-cube">
+          <div class="number2"></div>
+          <div class="number4"></div>
         </div>
       </div>
-              <!-- Notification container -->
+      <div class="cube back">
+        <div class="col-cube">
+          <div class="number1"></div>
+          <div class="number3"></div>
+        </div>
+        <div class="col-cube">
+          <div class="number2"></div>
+          <div class="number4"></div>
+        </div>
+      </div>
+      <div class="cube left">
+        <div class="col-cube">
+          <div class="number1"></div>
+          <div class="number3"></div>
+        </div>
+        <div class="col-cube">
+          <div class="number2"></div>
+          <div class="number4"></div>
+        </div>
+      </div>
+      <div class="cube right">
+        <div class="col-cube">
+          <div class="number1"></div>
+          <div class="number3"></div>
+        </div>
+        <div class="col-cube">
+          <div class="number2"></div>
+          <div class="number4"></div>
+        </div>
+      </div>
+      <div class="cube top">
+        <div class="col-cube">
+          <div class="number1"></div>
+          <div class="number3"></div>
+        </div>
+        <div class="col-cube">
+          <div class="number2"></div>
+          <div class="number4"></div>
+        </div>
+      </div>
+      <div class="cube bottom">
+        <div class="col-cube">
+          <div class="number1"></div>
+          <div class="number3"></div>
+        </div>
+        <div class="col-cube">
+          <div class="number2"></div>
+          <div class="number4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification container -->
   <div class="notification">
     <span class="notification-text">🚧 Sedang Dalam Pengembangan: Mohon Sabar, Halaman Ini Akan Segera Hadir! Versi PC Menawarkan Pengalaman Terbaik Saat Ini. 🚧</span>
   </div>
-    </div>
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</div>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
