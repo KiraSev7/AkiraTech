@@ -4,35 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Halaman Tidak Tersedia untuk Perangkat Mobile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-20px);
+        }
+        60% {
+          transform: translateY(-10px);
+        }
+      }
+
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f8f9fa;
+        background-color: #e0f7fa;
         margin: 0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-      }
-      .container {
+        color: #212529;
         text-align: center;
+        overflow: hidden;
       }
+
+      .container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        max-width: 600px;
+        animation: fadeIn 1s ease-out;
+      }
+
       h1 {
-        color: #343a40;
+        color: #00796b;
         font-size: 2.5rem;
         margin-bottom: 10px;
+        animation: fadeIn 1.5s ease-out;
       }
+
       p {
-        color: #6c757d;
+        color: #555;
         font-size: 1.2rem;
         margin-bottom: 20px;
+        animation: fadeIn 1.8s ease-out;
       }
+
       a {
-        color: #007bff;
+        color: #ff4081;
         text-decoration: none;
         font-weight: bold;
+        transition: color 0.3s ease;
+        animation: fadeIn 2s ease-out;
       }
+
+      a:hover {
+        color: #e91e63;
+        text-decoration: underline;
+      }
+
+      .emojis {
+        font-size: 2rem;
+        margin: 20px 0;
+        animation: bounce 2s infinite;
+      }
+
       @media (max-width: 768px) {
         h1 {
           font-size: 2rem;
@@ -45,14 +97,15 @@
   </head>
   <body>
     <div class="container">
-      <h1>Halaman Tidak Tersedia untuk Perangkat Mobile</h1>
+      <h1><i class="fas fa-user-cog"></i> Halaman Tidak Tersedia!</h1>
+      <div class="emojis">🚧📵</div>
       <p>
-        Mohon maaf, halaman ini masih dalam tahap pengembangan hanya bisa dapat
+        Mohon maaf, halaman ini masih dalam tahap pengembangan dan hanya bisa
         diakses melalui komputer.
       </p>
       <p>
         Untuk informasi lebih lanjut,
-        <a href="https://wa.me/6283847820834">Chat On Whatsapp</a>.
+        <a href="https://wa.me/6283847820834"><i class="fab fa-whatsapp"></i> Chat On Whatsapp</a>.
       </p>
     </div>
   </body>
